@@ -4,7 +4,7 @@ MAINTAINER Bo Qi <simble1986@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 # Preparation
-RUN pt-get update && apt-get install -yqq wget unzip php5-curl dnsutils default-jre&& \
+RUN apt-get update && apt-get install -yqq wget unzip php5-curl dnsutils default-jre && \
   rm -rf /var/lib/apt/lists/*
 COPY ./mutillidae-2.6.58.zip mutillidae.zip
 # Deploy Mutillidae
